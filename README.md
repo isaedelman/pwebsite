@@ -3,7 +3,7 @@ Personal Website Codebase
 
 URL: https://isaedelman.github.io/pwebsite/
 
-# Your Name's Personal Website
+# Isaac Edelman's Personal Website
 
 Welcome to the repository for my personal website! This website serves as a portfolio to showcase my projects, research, and personal interests.
 
