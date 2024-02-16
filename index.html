@@ -20,7 +20,7 @@
         }
 
         section {
-            margin-left: 150px;
+            margin-left: 50px;
             margin-bottom: 100px;
             margin-right: 50px;
         }
@@ -35,9 +35,13 @@
         }
 
         nav {
-        background-color: #333;
-        padding: 10px;
-        text-align: center;
+            background-color: #333;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            width: 100%; /* Make the navigation bar span the full width of the viewport */
+            top: 0; /* Position it at the top of the viewport */
+            z-index: 1000; /* Ensure the navigation bar is above other elements */
         }
 
         nav ul {
