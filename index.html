@@ -8,26 +8,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Personal Website</title>
-    <style>
-        /* Add your custom styles here */
+    <title>Isaac Edelman's - Personal Website</title>
+    <!-- JavaScript for Smooth Scrolling -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+      // Add smooth scrolling to all links
+      $("a").on('click', function(event) {
+    
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+          // Prevent default anchor click behavior
+          event.preventDefault();
+    
+          // Store hash
+          var hash = this.hash;
+    
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 750, function(){
+    
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+          });
+        } // End if
+      });
+    });
+    </script> 
 
+    <style>
         body {
             font-family: Arial, sans-serif;
             color: #fff;
             background-color: #0f0f0f;
-            margin: 20px;
+            margin: 0; /* Remove default margin */
+            padding: 0; /* Remove default padding */
         }
 
-        section {
-            margin-top: 50px;
+        #About,#Research,#Projects,#Contact,#Personal {
+            height: 750px;
+            margin-top: 0px;
             margin-left: 50px;
             margin-bottom: 100px;
             margin-right: 50px;
         }
 
         h2 {
+            text-indent: 100px;
             border-bottom: 2px solid #333;
+            padding-top: 50px;
             padding-bottom: 5px;
         }
 
@@ -38,6 +69,7 @@
         nav {
             background-color: #333;
             text-align: center;
+            padding: 10px;
             position: fixed;
             width: 100%; /* Make the navigation bar span the full width of the viewport */
             top: 0; /* Position it at the top of the viewport */
@@ -46,13 +78,13 @@
 
         nav ul {
             list-style-type: none;
-            margin: 0;
+            margin: 0; /* Remove default margin */
             padding: 0;
         }
 
         nav li {
             display: inline;
-            margin-right: 20px;
+            margin-right: 30px; /* Distance between elements in the nav bar */
         }
 
         nav a {
@@ -64,6 +96,21 @@
         nav a:hover {
             background-color: #555;
         }
+
+        h3 {
+            text-align: left;
+            padding-bottom: 5px;
+        }
+
+        h4 {
+            text-align: left;
+            padding-bottom: 5px;
+        }
+
+        .big-heading {
+            margin: 0;
+            font-size: clamp(40px, 8vw, 80px);
+        }
     </style>
 </head>
 
@@ -72,39 +119,40 @@
     <!-- Navigation Bar -->
     <nav>
         <ul>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#research">Research</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#fun">Fun</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#About" onclick="scrollToSection('About')">About Me</a></li>
+            <li><a href="#Research" onclick="scrollToSection('Research')">Research</a></li>
+            <li><a href="#Projects" onclick="scrollToSection('Projects')">Projects</a></li>
+            <li><a href="#Personal" onclick="scrollToSection('Personal')">Personal</a></li>
+            <li><a href="#Contact" onclick="scrollToSection('Contact')">Contact</a></li>
         </ul>
     </nav>
 
     <!-- About Me Section -->
-    <section id="about" >
+    <div class="main" id="About">
         <h2>About Me</h2>
+        <div>
+            <h3>Hi, my name is</h3>
+        </div>
+        <div>
+            <h4 class="big-heading">Isaac Edelman</h4>
+        </div>
         <p>
-            Welcome to my personal website! I am Isaac Edelman, a life long physics student with a passion for astrophysics and engineering.
-            Feel free to explore and learn more about me and my journey.
+            I am a Physicist with past experience in astrophysics, atmospheric physics, and systems engineering.
             <br>
-            . School
+            Currently, I am working on projects in systems engineering and astrophysics exoplanet science
             <br>
-            . Work
-            <br>
-            ...
+            using the James Webb Space Telescope (JWST).
         </p>
-    </section>
+    </div>
 
     <!-- Research Section -->
-    <section id="research">
+    <div class="main" id="Research">
         <h2>Research</h2>
         <p>
             In this section, you can find information about my research interests and publications.
             <br>
             Orcid - 
-            <a href="https://orcid.org/0000-0001-8745-2613" target="_blank">
-                https://orcid.org/0000-0001-8745-2613
-                </a>
+            <a href="https://orcid.org/0000-0001-8745-2613" target="_blank">https://orcid.org/0000-0001-8745-2613</a>
             <br>
             . Atmospheric Physics
             <br>
@@ -120,10 +168,10 @@
             <br>
             ...
         </p>
-    </section>
+    </div>
 
     <!-- Projects Section -->
-    <section id="projects">
+    <div class="main" id="Projects">
         <h2>Projects</h2>
         <p>
             Here, I showcase some of the exciting projects I've worked on. Explore each project to learn more about the goals,
@@ -137,11 +185,11 @@
             <br>
             ...
         </p>
-    </section>
+    </div>
 
-    <!-- Fun Section -->
-    <section id="fun">
-        <h2>Fun</h2>
+    <!-- Personal Section -->
+    <div class="main" id="Personal">
+        <h2>Personal</h2>
         <p>
             Let's have some fun! In this section, I share my hobbies, interests, or any other enjoyable aspects of my life.
             <br>
@@ -152,10 +200,10 @@
             <br>
             ...
         </p>
-    </section>
+    </div>
 
     <!-- Contact Section -->
-    <section id="contact">
+    <div class="main" id="Contact">
         <h2>Contact</h2>
         <p>
             Interested in reaching out? Feel free to contact me through the following channels:
@@ -172,8 +220,7 @@
                 https://github.com/isaedelman
                 </a>
         </p>
-    </section>
+    </div>
 
 </body>
-
 </html>
