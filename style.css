@@ -1,0 +1,237 @@
+/* CSS Style source */
+
+/* Main page */
+body {
+    font-family: Arial, sans-serif;
+    color: #fff;
+    background-color: #0f0f0f;
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #333;
+    text-align: center;
+    padding: 1%;
+    position: fixed;
+    width: 100%; /* Make the navigation bar span the full width of the viewport */
+    top: 0; /* Position it at the top of the viewport */
+    z-index: 1000; /* Ensure the navigation bar is above other elements */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0; /* Remove default margin */
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 1%; /* Distance between elements in the nav bar */
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    size: 150px;
+    width: 100px;
+    outline: none;
+    border: none;
+}
+
+/* Welcome section */
+#welcome{
+    margin: 0 auto;
+    height: 750px;
+    margin-top: 0px;
+    margin-bottom: 100px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.big-heading {
+    margin: 0;
+    font-size: clamp(40px, 8vw, 80px);
+}
+
+/* Research section */
+#research{
+    margin: 0 auto;
+    height: 750px;
+    margin-top: 0px;
+    margin-bottom: 100px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+/* Projects section */
+#projects{
+    margin: 0 auto;
+    height: 750px;
+    margin-top: 0px;
+    margin-bottom: 100px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+/* Personal section */
+#personal {
+    margin: 0 auto;
+    height: 750px;
+    margin-top: 0px;
+    margin-bottom: 100px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+h2 {
+    text-indent: 5%;
+    border-bottom: 2px solid #333;
+    padding-top: 50px;
+    padding-bottom: 5px;
+}
+
+p {
+    line-height: 1.6;
+}
+
+h3 {
+    text-align: left;
+    padding-bottom: 5px;
+}
+
+h4 {
+    text-align: left;
+    padding-bottom: 5px;
+}
+
+/* ---Contact section--- */
+#contact{
+    margin: 0 auto;
+    height: 500px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.contact-box{
+    background: #6d6d6d;
+    display: flex;
+    height: 450px;
+}
+
+.contact-left{
+    flex-basis: 60%;
+    padding: 40px 60px;
+}
+
+.contact-right{
+    flex-basis: 40%;
+    padding: 40px;
+    background: #1c1c1c;
+    color: #ffffff;
+}
+
+.input-row{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.input-row .input-group{
+    flex-basis: 45%;
+}
+
+input{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #ffffff;
+    outline: none;
+    padding-bottom: 5px;
+}
+
+textarea{
+    width: 100%;
+    border: 1px solid #ffffff;
+    outline: none;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+label{
+    margin-bottom: 6px;
+    display: block;
+    color: #ffffff;
+}
+
+button{
+    background: #ffffff;
+    width: 100px;
+    border: none;
+    outline: none;
+    color: #000000;
+    height: 35px;
+    border-radius: 30px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    box-shadow: 0px 5px 15px 0px rgba(28,0,181,0,3);
+}
+
+.contact-left h3{
+    color: #ffffff;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.contact-right h3{
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+tr rd:first-child{
+    padding-right: 20px;
+}
+
+tr rd{
+    padding-top: 20px;
+}
+/* Responsive Styles */
+@media only screen and (max-width: 600px) {
+    .main {
+        height: auto;
+        margin: 0 10px;
+    }
+
+    h2 {
+        text-indent: 10px;
+        border-bottom: 2px solid #333;
+        padding-top: 50px;
+        padding-bottom: 5px;
+    }
+
+    nav {
+        background-color: #333;
+        text-align: center;
+        padding: 1%;
+        position: fixed;
+        width: 100%; /* Make the navigation bar span the full width of the viewport */
+        top: 0; /* Position it at the top of the viewport */
+        z-index: 1000; /* Ensure the navigation bar is above other elements */
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav li {
+        margin: 1%;
+    }
+}
