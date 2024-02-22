@@ -55,13 +55,21 @@ nav a:hover {
     margin-right: 50px;
 }
 
+.welcome-background{
+    height: 750px;
+    background-image: url('images/iceland_coastline.jpg'); /* Replace 'path/to/your/image.jpg' with the actual path to your image file */
+    background-size: cover; /* This property ensures that the background image covers the entire container */
+    background-position: center; /* This property centers the background image */
+    background-repeat: no-repeat; /* This property prevents the background image from repeating */
+}
+
 .big-heading {
     margin: 0;
     font-size: clamp(40px, 8vw, 80px);
 }
 
-/* Research section */
-#research{
+/* Projects section */
+#projects{
     margin: 0 auto;
     height: 750px;
     margin-top: 0px;
@@ -70,8 +78,8 @@ nav a:hover {
     margin-right: 50px;
 }
 
-/* Projects section */
-#projects{
+/* Research section */
+#publications{
     margin: 0 auto;
     height: 750px;
     margin-top: 0px;
@@ -121,22 +129,25 @@ h4 {
     margin-right: 50px;
 }
 
-.contact-box{
+.contact-box {
     height: 250px;
 }
 
-.contact-box p{
-    margin: auto;
-    width: 50%;
-    text-align: center;
+.contact-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
-.contact-box i{
-    margin: auto;
-    width: 100%;
+.contact-item {
+    flex-basis: 30%; /* Adjust the width as needed */
+    padding: 10px;
     text-align: center;
-    padding-top: 1%;
-    padding-bottom: 1%;
+    margin: 10px;
+}
+
+.underline {
+    text-decoration: underline;
 }
 
 /* Designed by */

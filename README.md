@@ -9,29 +9,29 @@ Welcome to the repository for my personal website! This website serves as a port
 
 ## Table of Contents
 
-- [About Me](#about-me)
-- [Research](#research)
-- [Projects](#projects)
-- [Fun](#fun)
-- [Contact](#contact)
+- [WELCOME](#welcome)
+- [PROJECTS](#projects)
+- [PUBLICATIONS](#publications)
+- [PERSONAL](#personl)
+- [CONTACT](#contact)
 
-## About Me
+## WELCOME
 
 In this section, you'll find information about me, my background, and my interests. Feel free to explore and get to know me better.
 
-## Research
-
-Check out my research interests and any academic achievements in this section. It provides insights into the academic side of my journey.
-
-## Projects
+## PROJECTS
 
 Explore the various projects I've worked on. Each project comes with details, goals, outcomes, and technologies involved.
 
-## Fun
+## PUBLICATIONS
+
+Check out my research interests and any academic achievements in this section. It provides insights into the academic side of my journey.
+
+## PERSONAL
 
 Let's have some fun! This section showcases my hobbies, interests, and other enjoyable aspects of my life outside of work.
 
-## Contact
+## CONTACT
 
 Interested in reaching out? You can contact me through the following channels:
 
