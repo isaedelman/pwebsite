@@ -114,7 +114,7 @@ h4 {
 /* ---Contact section--- */
 #contact{
     margin: 0 auto;
-    height: 500px;
+    height: 400px;
     margin-top: 0px;
     margin-bottom: 0px;
     margin-left: 50px;
@@ -122,86 +122,40 @@ h4 {
 }
 
 .contact-box{
-    background: #6d6d6d;
-    display: flex;
-    height: 450px;
+    height: 250px;
 }
 
-.contact-left{
-    flex-basis: 60%;
-    padding: 40px 60px;
+.contact-box p{
+    margin: auto;
+    width: 50%;
+    text-align: center;
 }
 
-.contact-right{
-    flex-basis: 40%;
-    padding: 40px;
-    background: #1c1c1c;
-    color: #ffffff;
-}
-
-.input-row{
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
-}
-
-.input-row .input-group{
-    flex-basis: 45%;
-}
-
-input{
+.contact-box i{
+    margin: auto;
     width: 100%;
-    border: none;
-    border-bottom: 1px solid #ffffff;
-    outline: none;
-    padding-bottom: 5px;
+    text-align: center;
+    padding-top: 1%;
+    padding-bottom: 1%;
 }
 
-textarea{
-    width: 100%;
-    border: 1px solid #ffffff;
-    outline: none;
-    padding: 10px;
-    box-sizing: border-box;
-}
-
-label{
-    margin-bottom: 6px;
-    display: block;
-    color: #ffffff;
-}
-
-button{
-    background: #ffffff;
-    width: 100px;
-    border: none;
-    outline: none;
-    color: #000000;
-    height: 35px;
-    border-radius: 30px;
-    margin-top: 20px;
+/* Designed by */
+#rights{
+    margin: 0 auto;
+    height: 50px;
+    margin-top: 0px;
     margin-bottom: 0px;
-    box-shadow: 0px 5px 15px 0px rgba(28,0,181,0,3);
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
-.contact-left h3{
-    color: #ffffff;
-    font-weight: 600;
-    margin-bottom: 30px;
+.rights-box p{
+    margin: 0; /* Remove default margin */
+    padding: 0;
+    text-align: center;
+    color: #6d6d6d;
 }
 
-.contact-right h3{
-    font-weight: 600;
-    margin-bottom: 30px;
-}
-
-tr rd:first-child{
-    padding-right: 20px;
-}
-
-tr rd{
-    padding-top: 20px;
-}
 /* Responsive Styles */
 @media only screen and (max-width: 600px) {
     .main {
