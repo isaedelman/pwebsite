@@ -5,9 +5,12 @@ body {
     font-family: Arial, sans-serif;
     color: #fff;
     background-color: #0f0f0f;
-    margin: 0; /* Remove default margin */
-    padding: 0; /* Remove default padding */
-    background-image: url('images/iceland_coastline.jpg'); /* Replace 'path/to/your/image.jpg' with the actual path to your image file */
+    margin: 0;
+    /* Remove default margin */
+    padding: 0;
+    /* Remove default padding */
+    background-image: url('images/iceland_coastline.jpg');
+    /* Replace 'path/to/your/image.jpg' with the actual path to your image file */
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -19,21 +22,26 @@ nav {
     text-align: center;
     padding: 0.5%;
     position: fixed;
-    width: 100%; /* Make the navigation bar span the full width of the viewport */
-    top: 0; /* Position it at the top of the viewport */
-    z-index: 1000; /* Ensure the navigation bar is above other elements */
+    width: 100%;
+    /* Make the navigation bar span the full width of the viewport */
+    top: 0;
+    /* Position it at the top of the viewport */
+    z-index: 1000;
+    /* Ensure the navigation bar is above other elements */
     opacity: 80%;
 }
 
 nav ul {
     list-style-type: none;
-    margin: 0; /* Remove default margin */
+    margin: 0;
+    /* Remove default margin */
     padding: 0;
 }
 
 nav li {
     display: inline;
-    margin-right: 1%; /* Distance between elements in the nav bar */
+    margin-right: 1%;
+    /* Distance between elements in the nav bar */
 }
 
 nav a {
@@ -49,7 +57,7 @@ nav a:hover {
 }
 
 /* Welcome section */
-#welcome{
+#welcome {
     margin: 0 auto;
     height: 750px;
     margin-bottom: 100px;
@@ -57,7 +65,7 @@ nav a:hover {
     margin-right: 3%;
 }
 
-#welcome .container{
+#welcome .container {
     height: 750px;
 }
 
@@ -67,7 +75,7 @@ nav a:hover {
 }
 
 /* Projects section */
-#projects{
+#projects {
     margin: 0 auto;
     height: 750px;
     margin-bottom: 100px;
@@ -75,12 +83,68 @@ nav a:hover {
     margin-right: 3%;
 }
 
-#projects .container{
+#projects .container {
     background: #1d1d1d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#projects .category-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    margin: 20px auto;
+}
+
+#projects .tile {
+    position: relative;
+    width: calc(100% - 40px);
+    /* Full width of the container with some padding */
+    margin: 15px 0;
+    overflow: hidden;
+    border: 2px solid #000;
+    background: #fff;
+    cursor: pointer;
+    transition: max-height 0.3s ease-in-out, padding 0.3s ease-in-out;
+    max-height: 50px;
+    /* Initial height of the tile */
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#projects .tile.expanded {
+    max-height: 150px;
+    /* Expanded height of the tile */
+    padding: 20px;
+}
+
+#projects .tile-content {
+    box-sizing: border-box;
+}
+
+#projects .tile-header {
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
+}
+
+#projects .tile-description {
+    display: none;
+    color: #000;
+    margin-top: 10px;
+    transition: opacity 0.3s ease-in-out;
+}
+
+#projects .tile.expanded .tile-description {
+    display: block;
+    opacity: 1;
 }
 
 /* Research section */
-#publications{
+#publications {
     margin: 0 auto;
     height: 750px;
     margin-bottom: 100px;
@@ -88,7 +152,7 @@ nav a:hover {
     margin-right: 3%;
 }
 
-#publications .container{
+#publications .container {
     background: #1d1d1d;
 }
 
@@ -101,7 +165,7 @@ nav a:hover {
     margin-right: 3%;
 }
 
-#personal .container{
+#personal .container {
     background: #1d1d1d;
 }
 
@@ -127,7 +191,7 @@ h4 {
 }
 
 /* ---Contact section--- */
-#contact{
+#contact {
     margin: 0 auto;
     height: 400px;
     margin-left: 3%;
@@ -143,7 +207,8 @@ h4 {
 }
 
 #contact .contact-item {
-    flex-basis: 30%; /* Adjust the width as needed */
+    flex-basis: 30%;
+    /* Adjust the width as needed */
     padding: 0.5%;
     padding-top: 5%;
     text-align: center;
@@ -155,15 +220,16 @@ h4 {
 }
 
 /* Designed by */
-#rights{
+#rights {
     margin: 0 auto;
     height: 50px;
     margin-left: 3%;
     margin-right: 3%;
 }
 
-#rights .rights-box p{
-    margin: 0; /* Remove default margin */
+#rights .rights-box p {
+    margin: 0;
+    /* Remove default margin */
     text-align: center;
     color: #ffffff;
 }
@@ -194,7 +260,7 @@ h4 {
     }
 
     /* ---Contact section--- */
-    #contact{
+    #contact {
         margin: 0 auto;
         height: 750px;
         margin-left: 3%;
