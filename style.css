@@ -235,6 +235,7 @@ nav a:hover {
 
 /* Personal section */
 #personal {
+    position: relative;
     margin: 0 auto;
     margin-bottom: 100px;
     margin-left: 3%;
@@ -242,12 +243,54 @@ nav a:hover {
 }
 
 #personal .container {
+    margin: 2rem auto;
     background: rgba(29, 29, 29, 0.8);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    box-sizing: border-box;
+    border-radius: 8px;
+}
+
+#personal .section-title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Gallery Layout */
+#personal .gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* 3 columns */
+    grid-gap: 1.5rem;
+    /* Gap between grid items */
+}
+
+/* Gallery Item Styles */
+#personal .gallery__img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Grid Item Specific Positions */
+#personal .gallery__item {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Caption Styles */
+#personal .gallery__caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    text-align: center;
+    opacity: 0;
+    padding: 1%;
+    transition: opacity 0.3s ease-in-out;
+}
+
+#personal .gallery__item:hover .gallery__caption {
+    opacity: 1;
 }
 
 /* ---Contact section--- */
@@ -345,5 +388,30 @@ nav a:hover {
 
     #contact .underline {
         text-decoration: underline;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    #personal .container {
+        width: 80%;
+        /* Adjust container width for smaller screens */
+    }
+
+    #personal .gallery {
+        grid-template-columns: repeat(2, 1fr);
+        /* 2 columns on tablets */
+    }
+}
+
+@media (max-width: 768px) {
+    #personal .container {
+        width: 90%;
+        /* Further adjust container width for smaller screens */
+    }
+
+    #personal .gallery {
+        grid-template-columns: 1fr;
+        /* 1 column on smaller screens */
     }
 }
