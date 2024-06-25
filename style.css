@@ -58,6 +58,13 @@ h4 {
     font-weight: bold;
 }
 
+.nav-div-left a {
+    text-decoration: none;
+    color: #000;
+    padding-left: 20px;
+    font-weight: bold;
+}
+
 .nav-div-right {
     flex-grow: 1;
     text-align: right;
@@ -96,19 +103,57 @@ section {
 /* Welcome section */
 #welcome {
     margin: 0 auto;
-    height: 750px;
+    height: 450px;
     margin-bottom: 100px;
     margin-left: 3%;
     margin-right: 3%;
 }
 
-#welcome .container {
-    height: 750px;
-}
-
 #welcome .big-heading {
     margin: 0;
     font-size: clamp(40px, 8vw, 80px);
+}
+
+.cv-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 20px;
+    color: #000;
+    background-color: #fff;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    border: 2px solid #000;
+}
+
+.cv-button:hover {
+    color: #808080;
+    border: 2px solid #808080;
+}
+
+#welcome .container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.text-column {
+    flex: 1;
+    text-align: left;
+    padding-right: 20px;
+    /* Space between text and image */
+}
+
+.image-column {
+    flex: 1;
+    text-align: center;
+    /* Center align the image within its column */
+}
+
+.headshot {
+    width: 350px;
+    height: 450px;
+    object-fit: cover;
 }
 
 /* Projects section */
@@ -123,59 +168,63 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
-    box-sizing: border-box;
 }
 
-#projects .category-title {
-    font-size: 24px;
-    font-weight: bold;
-    color: #000;
-    margin: 20px auto;
+.project-title-1,
+.project-title-2,
+.project-title-3,
+.project-title-4 {
+    text-decoration: underline;
+    font-size: 1.5em;
+    margin: 20px 0;
+    text-align: left;
+    /* Align titles to the left */
+    width: 100%;
+    /* Make sure the title spans the full width */
 }
 
-#projects .tile {
-    position: relative;
-    width: calc(100% - 40px);
-    /* Full width of the container with some padding */
-    margin: 15px 0;
-    overflow: hidden;
-    background: #fff;
-    cursor: pointer;
-    transition: max-height 0.3s ease-in-out, padding 0.3s ease-in-out;
-    max-height: 50px;
-    /* Initial height of the tile */
+.tile {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    margin: 10px 0;
+}
+
+.tile-content {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
     padding: 10px;
-    box-sizing: border-box;
-    opacity: 1;
 }
 
-#projects .tile.expanded {
-    max-height: 500px;
-    /* Expanded height of the tile */
+.text-column {
+    flex: 1;
     padding: 20px;
 }
 
-#projects .tile-content {
-    box-sizing: border-box;
+#projects .border-column {
+    width: 2px;
+    background-color: black;
+    margin: 0 10px;
 }
 
-#projects .tile-header {
-    font-size: 18px;
-    font-weight: bold;
-    color: #000;
+.image-column {
+    flex: 1;
+    text-align: center;
 }
 
-#projects .tile-description {
-    display: none;
-    color: #000;
-    margin-top: 10px;
-    transition: opacity 0.3s ease-in-out;
+.image-column img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
 }
 
-#projects .tile.expanded .tile-description {
-    display: block;
-    opacity: 1;
+#projects hr {
+    border: 0;
+    border-top: 2px solid #000;
+    width: 100%;
+    margin: 20px 0;
 }
 
 /* Publications section */
@@ -195,56 +244,93 @@ section {
     box-sizing: border-box;
 }
 
-#publications .category-title {
-    font-size: 24px;
-    font-weight: bold;
-    color: #000;
-    margin: 20px auto;
+.project-title-1,
+.project-title-2,
+.project-title-3,
+.project-title-4,
+.category-title {
+    font-size: 1.5em;
+    margin: 20px 0;
+    text-align: left;
+    width: 100%;
 }
 
-#publications .tile {
-    position: relative;
-    width: calc(100% - 40px);
-    /* Full width of the container with some padding */
-    margin: 15px 0;
-    overflow: hidden;
-    background: #fff;
-    cursor: pointer;
-    transition: max-height 0.3s ease-in-out, padding 0.3s ease-in-out;
-    max-height: 50px;
-    /* Initial height of the tile */
+.tile {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    margin: 10px 0;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.tile-header {
+    font-size: 1.5em;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.tile-content {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
     padding: 10px;
-    box-sizing: border-box;
-    opacity: 1;
 }
 
-#publications .tile.expanded {
-    max-height: 500px;
-    /* Expanded height of the tile */
+.text-column {
+    flex: 1;
     padding: 20px;
+    text-align: left;
 }
 
-#publications .tile-content {
-    box-sizing: border-box;
+.border-column {
+    width: 2px;
+    background-color: black;
+    margin: 0 10px;
 }
 
-#publications .tile-header {
-    font-size: 18px;
-    font-weight: bold;
+.image-column {
+    flex: 1;
+    text-align: center;
+}
+
+.image-column img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+hr {
+    border: 0;
+    border-top: 2px solid #000;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.centered-button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.orcid-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 20px;
     color: #000;
+    background-color: #fff;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    border: 2px solid #000;
 }
 
-#publications .tile-description {
-    display: none;
-    color: #000;
-    margin-top: 10px;
-    transition: opacity 0.3s ease-in-out;
+.orcid-button:hover {
+    color: #808080;
+    border: 2px solid #808080;
 }
 
-#publications .tile.expanded .tile-description {
-    display: block;
-    opacity: 1;
-}
 
 /* Personal section */
 #personal {
@@ -258,6 +344,7 @@ section {
 #personal .container {
     margin: 2rem auto;
     border-radius: 8px;
+    text-decoration: underline 2px;
 }
 
 #personal .section-title {
@@ -312,20 +399,25 @@ section {
     margin-right: 3%;
 }
 
-#contact .contact-box {
-    height: 250px;
+.contact-box {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 #contact .contact-item {
-    flex-basis: 30%;
+    flex: 1;
     /* Adjust the width as needed */
     padding: 0.5%;
     padding-top: 5%;
     text-align: center;
-    margin: 1%;
+    border-left: 2px solid #000;
+    /* Border between columns */
+}
+
+#contact .contact-item:first-child {
+    border-left: none;
+    /* Remove the left border from the first item */
 }
 
 #contact .contact-item i {

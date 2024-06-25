@@ -44,11 +44,10 @@
 </head>
 
 <body>
-
     <!-- Navigation Bar -->
     <div class="nav-container">
         <div class="nav-div-left">
-
+            <a href="#welcome">HOME</a>
         </div>
         <div class="nav-div-right">
             <nav>
@@ -67,19 +66,24 @@
     <div class="main" id="welcome">
         <h2>WELCOME</h2>
         <div class="container">
-            <div>
-                <h3>Hi, my name is</h3>
+            <div class="text-column">
+                <div>
+                    <h3>Hi, my name is</h3>
+                </div>
+                <div>
+                    <h4 class="big-heading">Isaac Edelman</h4>
+                </div>
+                <p>
+                    I'm a physicist with expertise in astrophysics, atmospheric physics, and systems engineering.
+                    <br>
+                    Currently, I am working on projects in medical device engineering and astrophysics exoplanet
+                    research using the James Webb Space Telescope (JWST).
+                </p>
+                <a href="path/to/your/cv.pdf" class="cv-button" target="_blank">Curriculum Vitae</a>
             </div>
-            <div>
-                <h4 class="big-heading">Isaac Edelman</h4>
+            <div class="image-column">
+                <img src="images/stock_headshot.jpg" alt="Isaac Edelman Headshot" class="headshot">
             </div>
-            <p>
-                I'm a physicist with expertise in astrophysics, atmospheric physics, and systems engineering.
-                <br>
-                Currently, I am working on projects in medical device engineering and astrophysics exoplanet research
-                <br>
-                using the James Webb Space Telescope (JWST).
-            </p>
         </div>
     </div>
 
@@ -88,314 +92,476 @@
         <h2>PROJECTS</h2>
         <div class="container">
             <!-- Selected Projects Title -->
-            <div class="category-title">---Selected Projects---</div>
+            <div class="project-title-1">Highlighted Projects</div>
             <!-- Astrophysics Title -->
-            <div class="category-title">Astrophysics</div>
+            <div class="project-title-2">Astrophysics</div>
             <!-- Astrophysics Projects -->
+            <hr>
             <div class="tile">
                 <div class="tile-content">
-                    <div class="tile-header">Exploring Exoplanets GJ-3470, WASP-107-b, and WASP-80-b with JWST and
-                        Eureka!</div>
-                    <div class="tile-description">
-                        Using data from the James Webb Space Telescope (JWST) Guaranteed Time Observations (GTO)
-                        program, I conducted an extensive data reduction and analysis of exoplanets using the Eureka!
-                        analysis pipeline. I processed and analyzed two transits of GJ-3470, one transit of WASP-107-b,
-                        one transit of WASP-80-b, and one eclipse of WASP-80-b. The primary objective was to confirm
-                        stellar and planetary properties and determine transit depths at the photometric wavelengths.
-                        This work was presented at NASA Ames and contributed to multiple publications.
+                    <div class="text-column">
+                        <div class="tile-header">Exploring Exoplanets GJ-3470, WASP-107-b, and WASP-80-b with JWST and
+                            Eureka!</div>
+                        <div class="tile-description">
+                            Using data from the James Webb Space Telescope (JWST) Guaranteed Time Observations (GTO)
+                            program, I conducted an extensive data reduction and analysis of exoplanets using the
+                            Eureka!
+                            analysis pipeline. I processed and analyzed two transits of GJ-3470, one transit of
+                            WASP-107-b,
+                            one transit of WASP-80-b, and one eclipse of WASP-80-b. The primary objective was to confirm
+                            stellar and planetary properties and determine transit depths at the photometric
+                            wavelengths.
+                            This work was presented at NASA Ames and contributed to multiple publications.
+                        </div>
+                    </div>
+                    <div class="border-column"></div>
+                    <div class="image-column">
+                        <img src="path/to/your/image1.jpg" alt="Project Image">
                     </div>
                 </div>
             </div>
+            <hr>
             <div class="tile">
                 <div class="tile-content">
-                    <div class="tile-header">Development of the Eureka! Pipeline</div>
-                    <div class="tile-description">
-                        In collaboration with Taylor Bell and NASA Ames, I contributed to the development of the Eureka!
-                        analysis pipeline. Eureka! is a data reduction and analysis tool specifically designed for
-                        exoplanet time-series observations, with a particular emphasis on JWST data. Over the next 1-2
-                        decades, JWST will focus on four main science themes: the Early Universe, Galaxies Over Time,
-                        the Star Lifecycle, and Other Worlds. Eureka! aims to provide the astronomy community with an
-                        open-source end-to-end pipeline tool for the reduction and analysis of exoplanet time-series
-                        observations, supporting the pursuit of the fourth theme, Other Worlds. This work was presented
-                        at NASA Ames and is used for JWST exoplanet analysis world wide.
-                        </br>
-                        <a href="https://eurekadocs.readthedocs.io/en/latest/" target="_blank">Eureka! Read the
-                            Docs.</a>
+                    <div class="text-column">
+                        <div class="tile-header">Development of the Eureka! Pipeline</div>
+                        <div class="tile-description">
+                            In collaboration with Taylor Bell and NASA Ames, I contributed to the development of the
+                            Eureka!
+                            analysis pipeline. Eureka! is a data reduction and analysis tool specifically designed for
+                            exoplanet time-series observations, with a particular emphasis on JWST data. Over the next
+                            1-2
+                            decades, JWST will focus on four main science themes: the Early Universe, Galaxies Over
+                            Time,
+                            the Star Lifecycle, and Other Worlds. Eureka! aims to provide the astronomy community with
+                            an
+                            open-source end-to-end pipeline tool for the reduction and analysis of exoplanet time-series
+                            observations, supporting the pursuit of the fourth theme, Other Worlds. This work was
+                            presented
+                            at NASA Ames and is used for JWST exoplanet analysis worldwide.
+                            <br>
+                            <a href="https://eurekadocs.readthedocs.io/en/latest/" target="_blank">Eureka! Read the
+                                Docs.</a>
+                        </div>
+                    </div>
+                    <div class="border-column"></div>
+                    <div class="image-column">
+                        <img src="images/Eureka_logo.png" alt="Project Image">Credit: Bell et al., (2022). Eureka!: An
+                        End-to-End Pipeline for JWST Time-Series Observations. Journal of Open Source Software, 7(79),
+                        4503, https://doi.org/10.21105/joss.04503
                     </div>
                 </div>
             </div>
+            <hr>
             <div class="tile">
                 <div class="tile-content">
-                    <div class="tile-header">Exploring Aqu-MM4 through Infared Keck Observations</div>
-                    <div class="tile-description">
-                        Using data from the Keck Observatory, I conducted a comprehensive data reduction and analysis of
-                        the protostellar system Aqu-MM4 with three primary objectives. First, to model the infrared
-                        spectrum of the star using the Phoenix BT-Settl Model. Second, to match the model to the
-                        observations. Third, to determine parameter constraints. This work as presented at NASA Ames.
+                    <div class="text-column">
+                        <div class="tile-header">Exploring Aqu-MM4 through Infrared Keck Observations</div>
+                        <div class="tile-description">
+                            Using data from the Keck Observatory, I conducted a comprehensive data reduction and
+                            analysis of
+                            the protostellar system Aqu-MM4 with three primary objectives. First, to model the infrared
+                            spectrum of the star using the Phoenix BT-Settl Model. Second, to match the model to the
+                            observations. Third, to determine parameter constraints. This work was presented at NASA
+                            Ames.
+                        </div>
+                    </div>
+                    <div class="border-column"></div>
+                    <div class="image-column">
+                        <img src="path/to/your/image3.jpg" alt="Project Image">
                     </div>
                 </div>
             </div>
+            <hr>
             <div class="tile">
                 <div class="tile-content">
-                    <div class="tile-header">Exploring HD 189733 b (The Nighmare World) with JWST & Eclipse Mapping
+                    <div class="text-column">
+                        <div class="tile-header">Exploring HD 189733 b (The Nighmare World) with JWST & Eclipse Mapping
+                        </div>
+                        <div class="tile-description">
+                            Using data from the James Webb Space Telescope (JWST) Guaranteed Time Observations (GTO)
+                            program, I conducted a thorough data reduction and analysis of exoplanet HD189733b's spectra
+                            with three primary objectives. First, to measure the 2D temperature and wind structure of
+                            the
+                            planet. Second, to assess the effectiveness of JWST. Third, to measure the 3D temperature,
+                            wind,
+                            and chemical structure of the planet's atmosphere. This work was presented at the Bay Area
+                            Exoplanet Meeting 2022 Oct. 28 (BEAM) and NASA Ames community.
+                            <br>
+                            <a href="https://sites.google.com/site/bayareaexoplanets" target="_blank">BEAM</a>
+                        </div>
                     </div>
-                    <div class="tile-description">
-                        Using data from the James Webb Space Telescope (JWST) Guaranteed Time Observations (GTO)
-                        program, I conducted a thorough data reduction and analysis of exoplanet HD189733b's spectra
-                        with three primary objectives. First, to measure the 2D temperature and wind structure of the
-                        planet. Second, to assess the effectiveness of JWST. Third, to measure the 3D temperature, wind,
-                        and chemical structure of the planet's atmosphere. This work was presented at the Bay Area
-                        Exoplanet Meeting 2022 Oct. 28 (BEAM) and NASA Ames community.
-                        </br>
-                        <a href="https://sites.google.com/site/bayareaexoplanets" target="_blank">BEAM</a>
+                    <div class="border-column"></div>
+                    <div class="image-column">
+                        <img src="path/to/your/image4.jpg" alt="Project Image">
                     </div>
                 </div>
             </div>
+            <hr>
             <div class="tile">
                 <div class="tile-content">
-                    <div class="tile-header">Infrared and Radio Observations of Star-Forming Regions
-                        What is the future fate of this region in space?
+                    <div class="text-column">
+                        <div class="tile-header">Infrared and Radio Observations of Star-Forming Regions</div>
+                        <div class="tile-description">
+                            Using data from the NASA Spitzer Space Telescope, I conducted an in-depth analysis of the
+                            left
+                            lobe region of the source 19012+0536 utilizing CASA and DS9. The objective was to uncover
+                            the
+                            physics and potential future evolution of the protostar. This research was presented at the
+                            New
+                            Mexico Tech Student Research Symposium.
+                            <br>
+                            <a href="images/NMT_SRS_Astro_Poster.pdf" target="_blank">Poster</a>
+                        </div>
                     </div>
-                    <div class="tile-description">
-                        Using data from the NASA Spitzer Space Telescope, I conducted an in-depth analysis of the left
-                        lobe region of the source 19012+0536 utilizing CASA and DS9. The objective was to uncover the
-                        physics and potential future evolution of the protostar. This research was presented at the New
-                        Mexico Tech Student Research Symposium.
-                        </br>
-                        <a href="images/NMT_SRS_Astro_Poster.pdf" target="_blank">Poster</a>
+                    <div class="border-column"></div>
+                    <div class="image-column">
+                        <img src="images/NMT SRS Astro Poster.png" alt="Project Image">Credit: Isaac Edelman, NMT.
                     </div>
                 </div>
             </div>
-
+            <hr>
             <!-- Engineering Title -->
-            <div class="category-title">Engineering</div>
+            <div class="project-title-3">Engineering</div>
             <!-- Engineering Projects -->
+            <hr>
             <div class="tile">
                 <div class="tile-content">
-                    <div class="tile-header">Automated Testing Software & Equipment for Medical Devices</div>
-                    <div class="tile-description">
-                        In collaboration with engineering and manufacturing teams, I developed and implemented automated
-                        production software and equipment to enhance manufacturing throughput and support engineering
-                        development of medical devices.
+                    <div class="text-column">
+                        <div class="tile-header">Automated Testing Software & Equipment for Medical Devices</div>
+                        <div class="tile-description">
+                            In collaboration with engineering and manufacturing teams, I developed and implemented
+                            automated
+                            production software and equipment to enhance manufacturing throughput and support
+                            engineering
+                            development of medical devices.
+                        </div>
+                    </div>
+                    <div class="border-column"></div>
+                    <div class="image-column">
+                        <img src="path/to/your/image6.jpg" alt="Project Image">
                     </div>
                 </div>
             </div>
+            <hr>
             <div class="tile">
                 <div class="tile-content">
-                    <div class="tile-header">Pulse Field Ablation Medical Device</div>
-                    <div class="tile-description">
-                        This project involved collaboration with engineering teams and clients to develop a pulse field
-                        ablation medical device. The device is currently undergoing clinical trials to evaluate its
-                        effectiveness compared to existing heart ablation surgery procedures.
+                    <div class="text-column">
+                        <div class="tile-header">Pulse Field Ablation Medical Device</div>
+                        <div class="tile-description">
+                            This project involved collaboration with engineering teams and clients to develop a pulse
+                            field
+                            ablation medical device. The device is currently undergoing clinical trials to evaluate its
+                            effectiveness compared to existing heart ablation surgery procedures.
+                        </div>
+                    </div>
+                    <div class="border-column"></div>
+                    <div class="image-column">
+                        <img src="path/to/your/image7.jpg" alt="Project Image">
                     </div>
                 </div>
             </div>
+            <hr>
             <div class="tile">
                 <div class="tile-content">
-                    <div class="tile-header">Autonomous Vehicle Development</div>
-                    <div class="tile-description">
-                        In collaboration with the NASA Ames Autonomous Vehicle Team, I developed virtual testing
-                        environments in Unreal Engine to test and train autonomous rovers and drones. This work has been
-                        utilized by the Viper lunar rover team, the NASA Ames Mars yard team, and other vehicle teams.
+                    <div class="text-column">
+                        <div class="tile-header">Autonomous Vehicle Development</div>
+                        <div class="tile-description">
+                            In collaboration with the NASA Ames Autonomous Vehicle Team, I developed virtual testing
+                            environments in Unreal Engine to test and train autonomous rovers and drones. This work has
+                            been
+                            utilized by the Viper lunar rover team, the NASA Ames Mars yard team, and other vehicle
+                            teams.
+                        </div>
+                    </div>
+                    <div class="border-column"></div>
+                    <div class="image-column">
+                        <img src="path/to/your/image8.jpg" alt="Project Image">
                     </div>
                 </div>
             </div>
-
+            <hr>
             <!-- Game Development Title -->
-            <div class="category-title">Personal</div>
+            <div class="project-title-4">Personal</div>
             <!-- Game Development Projects -->
+            <hr>
             <div class="tile">
                 <div class="tile-content">
-                    <div class="tile-header">Unity Dev. Game Development</div>
-                    <div class="tile-description">
-                        Personal project focused on developing an indie game in Unity.
+                    <div class="text-column">
+                        <div class="tile-header">Unity Dev. Game Development</div>
+                        <div class="tile-description">
+                            Personal project focused on developing an indie game in Unity.
+                        </div>
+                    </div>
+                    <div class="border-column"></div>
+                    <div class="image-column">
+                        <img src="path/to/your/image9.jpg" alt="Project Image">
                     </div>
                 </div>
             </div>
+            <hr>
             <div class="tile">
                 <div class="tile-content">
-                    <div class="tile-header">Personal Website</div>
-                    <div class="tile-description">
-                        Built and deployed my own personal website from scratch.
+                    <div class="text-column">
+                        <div class="tile-header">Personal Website</div>
+                        <div class="tile-description">
+                            Built and deployed my own personal website from scratch.
+                        </div>
+                    </div>
+                    <div class="border-column"></div>
+                    <div class="image-column">
+                        <img src="path/to/your/image10.jpg" alt="Project Image">
                     </div>
                 </div>
             </div>
+            <hr>
         </div>
     </div>
+
 
     <!-- Research Section -->
     <div class="main" id="publications">
         <h2>PUBLICATIONS</h2>
         <div class="container">
-            <div class="category-title">Research Profile</div>
+            <div class="research-p-title">Research Profile</div>
+            <div class="tile">
+                <div class="tile-content centered-button-container">
+                    <a href="https://orcid.org/0000-0001-8745-2613" target="_blank" class="orcid-button">
+                        <i class="fa-brands fa-orcid"></i> View ORCID Profile
+                    </a>
+                </div>
+            </div>
+            <hr>
+            <div class="category-title">Select Publications</div>
+            <hr>
+            <!-- Publication 5 -->
             <div class="tile">
                 <div class="tile-content">
-                    <div class="tile-header"><i class="fa-brands fa-orcid"></i> ORCID</div>
-                    <div class="tile-description">
-                        See more of my work on my Orcid account:
-                        <a href="https://orcid.org/0000-0001-8745-2613"
-                            target="_blank">https://orcid.org/0000-0001-8745-2613</a>
+                    <div class="image-column">
+                        <img src="images/WASP-107bTransmissionSpectrumHubbleWFC3WebbNIRCamandWebbMIRI.jpeg"
+                            alt="Image related to the publication">This transmission spectrum, captured using NASA’s
+                        Hubble and James Webb space telescopes, shows the amounts of different wavelengths (colors) of
+                        starlight blocked by the atmosphere of the gas-giant exoplanet WASP-107 b. The spectrum includes
+                        light collected over four separate observations using a total of three different instruments:
+                        Hubble’s WFC3 (Wide Field Camera 3) Grism Spectrometer in green, Webb’s NIRCam (Near-Infrared
+                        Camera) Grism Spectrometer in orange, and Webb’s MIRI (Mid-Infrared Instrument) Low-Resolution
+                        Spectrometer in pink. This spectrum shows clear evidence for water (H2O), carbon dioxide (CO2),
+                        carbon monoxide (CO), methane (CH4), sulfur dioxide (SO2), and ammonia (NH4) in the planet’s
+                        atmosphere, allowing researchers to estimate the interior temperature and mass of the core.
+                        Illustration: NASA, ESA, CSA, Ralf Crawford (STScI) Science: L. Welbanks (ASU) and the JWST
+                        MANATEE team
+                    </div>
+                    <div class="border-column"></div>
+                    <div class="text-column">
+                        <div class="tile-header">A high internal heat flux and large core in a warm Neptune Exoplanet.
+                        </div>
+                        <br>
+                        <div class="tile-description">
+                            Abstract: Interactions between exoplanetary atmospheres and internal properties have long
+                            been hypothesized to be drivers of the inflation mechanisms of gaseous planets and apparent
+                            atmospheric chemical disequilibrium conditions1. However, transmission spectra of exoplanets
+                            has been limited in its ability to observational confirm these theories due to the limited
+                            wavelength coverage of HST and inferences of single molecules, mostly H2O (ref. 2). In this
+                            work, we present the panchromatic transmission spectrum of the approximately 750 K,
+                            low-density, Neptune-sized exoplanet WASP-107b using a combination of HST WFC3, JWST NIRCam
+                            and MIRI. From this spectrum, we detect spectroscopic features due to H2O (21σ), CH4 (5σ),
+                            CO (7σ), CO2 (29σ), SO2 (9σ), and NH3 (6σ). The presence of these molecules enable
+                            constraints on the atmospheric metal enrichment (M/H is 10–18× Solar3), vertical mixing
+                            strength (log10Kzz = 8.4–9.0 cm2s−1), and internal temperature (>345 K). The high internal
+                            temperature is suggestive of tidally-driven inflation4 acting upon a Neptunelike internal
+                            structure, which can naturally explain the planet’s large radius and low density. These
+                            findings suggest that eccentricity driven tidal heating is a critical process governing
+                            atmospheric chemistry and interior structure inferences for a majority of the cool (1,000K)
+                            super-Earth-to-Saturn mass exoplanet population.
+                            </br></br>
+                            Authors: Luis Welbanks, Taylor J. Bell, Thomas G. Beatty, Michael R. Line, Kazumasa Ohno,
+                            Jonathan J. Fortney, Everett Schlawin, Thomas P. Greene, Emily Rauscher, Peter McGill,
+                            Matthew Murphy, Vivien Parmentier, Yao Tang, Isaac Edelman, Sagnick Mukherjee, Lindsey S.
+                            Wiser, Pierre-Olivier Lagage, Achrène Dyrek & Kenneth E. Arnold
+                            </br>
+                            <a href="https://doi.org/10.1038/s41586-024-07514-w" target="_blank">Nature Publication</a>
+                            </br>
+                            <a href="https://arxiv.org/abs/2405.11018" target="_blank">Arvix Publication</a>
+                            </br>
+                            <a href="https://science.nasa.gov/missions/webb/webb-cracks-case-of-inflated-exoplanet/"
+                                target="_blank">NASA Press Release</a>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="category-title">---Select Publications---</div>
-            <div class="category-title">Astrophysics</div>
+            <hr>
+            <!-- Publication 4 -->
             <div class="tile">
                 <div class="tile-content">
-                    <div class="tile-header">A high internal heat flux and large core in a warm Neptune Exoplanet.</div>
-                    <div class="tile-description">
-                        Abstract: Interactions between exoplanetary atmospheres and internal properties have long
-                        been hypothesized to be drivers of the inflation mechanisms of gaseous planets and apparent
-                        atmospheric chemical disequilibrium conditions1. However, transmission spectra of exoplanets has
-                        been limited in its ability to observational confirm these theories due to the limited
-                        wavelength coverage of HST and inferences of single molecules, mostly H2O (ref. 2). In this
-                        work, we present the panchromatic transmission spectrum of the approximately 750 K, low-density,
-                        Neptune-sized exoplanet WASP-107b using a combination of HST WFC3, JWST NIRCam and MIRI. From
-                        this spectrum, we detect spectroscopic features due to H2O (21σ), CH4 (5σ), CO (7σ), CO2 (29σ),
-                        SO2 (9σ), and NH3 (6σ). The presence of these molecules enable constraints on the atmospheric
-                        metal enrichment (M/H is 10–18× Solar3), vertical mixing strength (log10Kzz = 8.4–9.0 cm2s−1),
-                        and internal temperature (>345 K). The high internal temperature is suggestive of tidally-driven
-                        inflation4 acting upon a Neptunelike internal structure, which can naturally explain the
-                        planet’s large radius and low density. These findings suggest that eccentricity driven tidal
-                        heating is a critical process governing atmospheric chemistry and interior structure inferences
-                        for a majority of the cool (1,000K) super-Earth-to-Saturn mass exoplanet population.
-                        </br>
-                        </br>
-                        Authors: Luis Welbanks, Taylor J. Bell, Thomas G. Beatty, Michael R. Line, Kazumasa Ohno,
-                        Jonathan J. Fortney, Everett Schlawin, Thomas P. Greene, Emily Rauscher, Peter McGill,
-                        Matthew
-                        Murphy, Vivien Parmentier, Yao Tang, Isaac Edelman, Sagnick Mukherjee, Lindsey S. Wiser,
-                        Pierre-Olivier Lagage, Achrène Dyrek & Kenneth E. Arnold
-                        </br>
-                        <a href="https://doi.org/10.1038/s41586-024-07514-w" target="_blank">Nature Publication</a>
-                        </br>
-                        <a href="https://arxiv.org/abs/2405.11018" target="_blank">Arvix Publication</a>
-                        </br>
-                        <a href="https://science.nasa.gov/missions/webb/webb-cracks-case-of-inflated-exoplanet/"
-                            target="_blank">NASA Press Release</a>
+                    <div class="text-column">
+                        <div class="tile-header">The JWST emission spectrum of the inflated hot Saturn WASP-69 b.</div>
+                        <br>
+                        <div class="tile-description">
+                            <br>
+                            <div class="authors">Authors: Schlawin, Everett ; Mukherjee, Sagnick ; Ohno, Kazumasa ;
+                                Bell, Taylor ; Beatty,
+                                Thomas ; Line, Michael ; Fortney, Jonathan ; Welbanks, Luis ; Rauscher, Emily ; Wiser,
+                                Lindsey ; Parmentier, Vivien ; Murphy, Matthew ; Edelman, Isaac ; Challener, Ryan ;
+                                Greene,
+                                Thomas</div>
+                            <br>
+                            <div class="abstract">
+                                Abstract: Emission spectra of exoplanet atmospheres give clues about their temperature
+                                structure, composition, vertical transport and geometric albedo, elucidating their
+                                chemical
+                                processes and giving clues about their formation and aerosols. We reveal the JWST 2-11
+                                um
+                                emission spectrum of the hot Saturn WASP-69 b (960 K zero-albedo equilibrium
+                                temperature)
+                                over three eclipses as part of the MANATEE program. We find evidence for carbon dioxide,
+                                carbon monoxide and water vapor in the atmosphere. The features are seen in absorption
+                                and
+                                require a temperature profile that decreases with altitude. Chemical equilibrium models
+                                point to an atmosphere enriched in heavy elements relative to its host star. We also
+                                find an
+                                unexpectedly high planet-to-star flux ratio at the shortest wavelengths (below 3 um),
+                                indicating a possible high geometric albedo for the planet, but one that is hard to
+                                reconcile with the thermal emission of the planet. This spectrum opens a new window into
+                                hot
+                                Jupiter atmospheres in the sub-1000 K equilibrium temperature regime where chemical
+                                transitions are expected to be significant.
+                            </div>
+                            <br>
+                            <div class="links">
+                                <a href="https://ui.adsabs.harvard.edu/abs/2024AAS...24316008S/abstract"
+                                    target="_blank">NASA ADS</a>,
+                                <a href="https://baas.aas.org/pub/2024n2i160p08/release/1" target="_blank">BAAS</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="border-column"></div>
+                    <div class="image-column">
+                        <img src="images/WASP69batmosphere-1024x576_Credit- Gabriel Perez Diaz, SMM (IAC).jpg"
+                            alt="Image related to the publication">This artist illustration shows WASP-69b, which sits
+                        about 163 light years from Earth, orbiting its host star. Credit: Gabriel Perez Diaz, SMM (IAC).
                     </div>
                 </div>
             </div>
+            <hr>
+            <!-- Publication 3 -->
             <div class="tile">
                 <div class="tile-content">
-                    <div class="tile-header">The JWST emission spectrum of the inflated hot Saturn WASP-69 b.</div>
-                    <div class="tile-description">
-                        Abstract: Emission spectra of exoplanet atmospheres give clues about their temperature
-                        structure, composition, vertical transport and geometric albedo, elucidating their chemical
-                        processes and giving clues about their formation and aerosols. We reveal the JWST 2-11 um
-                        emission spectrum of the hot Saturn WASP-69 b (960 K zero-albedo equilibrium temperature) over
-                        three eclipses as part of the MANATEE program. We find evidence for carbon dioxide, carbon
-                        monoxide and water vapor in the atmosphere. The features are seen in absorption and require a
-                        temperature profile that decreases with altitude. Chemical equilibrium models point to an
-                        atmosphere enriched in heavy elements relative to its host star. We also find an unexpectedly
-                        high planet-to-star flux ratio at the shortest wavelengths (below 3 um), indicating a possible
-                        high geometric albedo for the planet, but one that is hard to reconcile with the thermal
-                        emission of the planet. This spectrum opens a new window into hot Jupiter atmospheres in the
-                        sub-1000 K equilibrium temperature regime where chemical transitions are expected to be
-                        significant.
-                        </br>
-                        </br>
-                        Authors: Schlawin, Everett ; Mukherjee, Sagnick ; Ohno, Kazumasa ; Bell, Taylor ; Beatty, Thomas
-                        ; Line, Michael ; Fortney, Jonathan ; Welbanks, Luis ; Rauscher, Emily ; Wiser, Lindsey ;
-                        Parmentier, Vivien ; Murphy, Matthew ; Edelman, Isaac ; Challener, Ryan ; Greene, Thomas
-                        </br>
-                        <a href="https://ui.adsabs.harvard.edu/abs/2024AAS...24316008S/abstract" target="_blank">NASA
-                            ADS</a>
-                        </br>
-                        <a href="https://baas.aas.org/pub/2024n2i160p08/release/1" target="_blank">BAAS</a>
+                    <div class="image-column">
+                        <img src="images/Molecular Jets from High-mass Protostar. Cedit- Isaac Edelman_nmt.jpg"
+                            alt="Image related to the publication">Spitzer IRAC color composite, showing the 3.6 (blue),
+                        4.5 (green), and 8.0 μm (red) emission. The blue contours show the 7 mm continuum emission and
+                        represent the [2, 3, 4, 5, 7, 9, 11, 12.5] × σ7 mm levels, with σ7 mm = 94.9 mJy beam−1. The
+                        magenta contours show the SiO integrated intensity and represent the [2.5, 3, 4, 5, 5.5,6] ×σSiO
+                        levels, with σSiO = 32.4 mJy beam−1 km s−1. The black × marks the position of the radio
+                        continuum source. Cedit: Isaac Edelman, NMT.
+                    </div>
+                    <div class="border-column"></div>
+                    <div class="text-column">
+                        <div class="tile-header">Searching for Molecular Jets from High-mass Protostars.</div>
+                        <br>
+                        <div class="tile-description">
+                            Abstract: We report Very Large Array observations in the Q band toward 10 ionized jet
+                            candidates to search for SiO emission, a well-known shocked gas tracer. We detected 7 mm
+                            continuum counterparts toward 90% of the jet candidates. In most cases, the jet candidate is
+                            located toward the center of the 7 mm core, and the high masses (≈100 M⊙) and densities
+                            (≈107 cm−3) of the cores suggest that the central objects are very young high-mass
+                            protostars. We detected SiO J = 1–0 emission associated with six target sources. In all
+                            cases, the morphology and spectrum of the emission is consistent with what is expected for
+                            molecular jets along an outflow axis, thus confirming the jet nature of 60% of our sample.
+                            Our data suggest a positive correlation between the SiO luminosity LSiO, and both the
+                            bolometric luminosity LBol and the radio luminosity Sνd2 of the driving sources.
+                            </br></br>
+                            Authors: Tatiana M. Rodríguez, Peter Hofner, Isaac Edelman, Esteban D. Araya, and Viviana
+                            Rosero
+                            </br>
+                            <a href="https://doi.org/10.3847/1538-4365/aca4c6" target="_blank">Astrophysical Journal,
+                                Supplemental Series</a>
+                            </br>
+                            <a href="https://arxiv.org/abs/2301.05954" target="_blank">Arvix Publication</a>
+                        </div>
                     </div>
                 </div>
             </div>
+            <hr>
+            <!-- Publication 2 -->
             <div class="tile">
                 <div class="tile-content">
-                    <div class="tile-header">Searching for Molecular Jets from High-mass Protostars.</div>
-                    <div class="tile-description">
-                        Abstract: We report Very Large Array observations in the Q band toward 10 ionized jet candidates
-                        to search for SiO emission, a well-known shocked gas tracer. We detected 7 mm continuum
-                        counterparts toward 90% of the jet candidates. In most cases, the jet candidate is located
-                        toward the center of the 7 mm core, and the high masses (≈100 M⊙) and densities (≈107 cm−3) of
-                        the cores suggest that the central objects are very young high-mass protostars. We detected SiO
-                        J = 1–0 emission associated with six target sources. In all cases, the morphology and spectrum
-                        of the emission is consistent with what is expected for molecular jets along an outflow axis,
-                        thus confirming the jet nature of 60% of our sample. Our data suggest a positive correlation
-                        between the SiO luminosity LSiO, and both the bolometric luminosity LBol and the radio
-                        luminosity Sνd2 of the driving sources.
-                        </br>
-                        </br>
-                        Authors: Tatiana M. Rodríguez, Peter Hofner, Isaac Edelman, Esteban D. Araya, and Viviana Rosero
-                        </br>
-                        <a href="https://doi.org/10.3847/1538-4365/aca4c6" target="_blank">Astrophysical Journal,
-                            Supplemental Series</a>
-                        </br>
-                        <a href="https://arxiv.org/abs/2301.05954" target="_blank">Arvix Publication</a>
+                    <div class="text-column">
+                        <div class="tile-header">Searching for Molecular Jets from high-mass protostars.</div>
+                        <br>
+                        <div class="tile-description">
+                            Abstract: Even though high-mass stars (M>8 Msun) shape the universe at all scales, from
+                            their ionizing winds to their explosive deaths, how they are formed is still one of the
+                            biggest unknowns in astronomy. One proposed formation model is a scaled up version of the
+                            accretion model that seems to work well for lower mass objects. Jets are key ingredients in
+                            this formation scenario, since they dissipate excess angular momentum and allow accretion to
+                            proceed. However, observing massive young stellar objects (MYSOs) in their earliest
+                            protostellar stages is to this day a big observational challenge due to their rarity, large
+                            distances, and high extinction. To study the jet nature of the emission, we carried out VLA
+                            observations toward a sample of 10 ionized jet candidates at 42 GHz looking for SiO J=1-0
+                            emission. In this talk we will present the preliminary results of this work.
+                            </br></br>
+                            Authors: Rodriguez, T. M. ; Hofner, P. ; Edelman, I. ; Araya, D. E. ; Rosero, V.
+                            </br>
+                            <a href="https://ui.adsabs.harvard.edu/abs/2021anms.confE..15R/abstract"
+                                target="_blank">NASA ADS</a>
+                            </br>
+                            <a href="http://www.aoc.nrao.edu/events/nmsymposium/2021/proceedings.html"
+                                target="_blank">37th Annual New Mexico Symposium</a>
+                        </div>
+                    </div>
+                    <div class="border-column"></div>
+                    <div class="image-column">
+                        <img src="images/37NMSymposium-RodriguezTM - tatiana.pdf.png"
+                            alt="Image related to the publication">IRAS SIO(1-0) emissions. Cedit: Tatiana Rodriguez,
+                        NMT.
                     </div>
                 </div>
             </div>
+            <hr>
+            <!-- Publication 1 -->
             <div class="tile">
                 <div class="tile-content">
-                    <div class="tile-header">Searching for Molecular Jets from high-mass protostars.</div>
-                    <div class="tile-description">
-                        Abstract: Even though high-mass stars (M>8 Msun) shape the universe at all scales, from their
-                        ionizing winds to their explosive deaths, how they are formed is still one of the biggest
-                        unknowns in astronomy. One proposed formation model is a scaled up version of the accretion
-                        model that seems to work well for lower mass objects. Jets are key ingredients in this formation
-                        scenario, since they dissipate excess angular momentum and allow accretion to proceed. However,
-                        observing massive young stellar objects (MYSOs) in their earliest protostellar stages is to this
-                        day a challenge. Due to the large distances and short time scales involved, the number of known
-                        ionized jets driven by MYSOs is scarce, making the comparison of theoretical models with
-                        observations a difficult task. Using high resolution VLA cm observations, we have found a large
-                        set of jet candidates driven by very early MYSOs. Most of these candidates are unresolved and
-                        other probes are needed to confirm their jet nature. SiO is a well-known molecular jet tracer,
-                        since its abundance is highly enhanced in shocked gas regions due to the sputtering of dust
-                        grains. To confirm the jet nature of the emission, we carried out VLA observations toward a
-                        sample of 10 ionized jet candidates at 42 GHz looking for SiO J=1-0 emission. In this talk we
-                        will present the preliminary results of this work.
-                        </br>
-                        </br>
-                        Authors: Rodriguez, T. M. ; Hofner, P. ; Edelman, I. ; Araya, D. E. ; Rosero, V.
-                        </br>
-                        <a href="https://ui.adsabs.harvard.edu/abs/2021anms.confE..15R/abstract" target="_blank">NASA
-                            ADS</a>
-                        </br>
-                        <a href="http://www.aoc.nrao.edu/events/nmsymposium/2021/proceedings.html" target="_blank">37th
-                            Annual New Mexico Symposium</a>
+                    <div class="image-column">
+                        <img src="images/essoar.10505247.1.png" alt="Image related to the publication">Lighting Location
+                        System data (LLS). Credit: R. Sonnenfeld, NMT.
                     </div>
-                </div>
-            </div>
-            <div class="category-title">Atmospheric Physics</div>
-            <div class="tile">
-                <div class="tile-content">
-                    <div class="tile-header">Applying modern meteorological tools to the study of Ball Lightning
-                        (Kugelblitz).</div>
-                    <div class="tile-description">
-                        Abstract: Rakov and Uman pointed out (Lightning: Physics and Effects, 2003) that despite 5000
-                        published reports of ball lightning (BL) and a scientific literature comparable in volume to the
-                        literature on conventional lightning, we still have no idea of what mechanisms create or power
-                        BL. Lightning characterization technology advances can and should be applied to BL studies. Keul
-                        and Diendorfer (2018) have correlated BL reports with European lightning-detection network data,
-                        but no such attempt has been made for US BL reports up to now. Using 31 BL reports from a
-                        now-defunct US website, we have attempted correlations with National Lightning Detection Network
-                        (NLDN) and radar data archived at the National Climactic Data Center. Of the 31 reports, 5
-                        objects were indoors and 25 were reported to coincide with thunderstorms. Time information
-                        accurate to 30 minutes (1 sigma) and location information accurate within one to ten km was
-                        available from nine of the reports, and for these we obtained both NLDN and composite radar data
-                        covering the time frames indicated by the reports. For three of the nine reports, we found NLDN
-                        located strikes plausibly within the distance and time frames of the observer reports – thus
-                        qualifying as nearby (possibly causal) lightning. However, for the report for which the location
-                        of the ball was known within meters, the nearest lightning was 2.3 km away. 23 reports only
-                        associate BL with a storm within 25 km. Should it continue to hold in the face of more evidence,
-                        the relative lack of correlation of BL and nearby lightning suggests that the production of BL
-                        is associated more with static or changing electric fields in the vicinity of thunderstorms,
-                        than with the lightning plasma channel itself. While these results by themselves are limited, we
-                        are optimistic that one can learn more about the link between natural and ball lightning by
-                        fusing more precise eyewitness reports with lightning location and other archival meteorological
-                        data. To this end, we have launched a website to guide citizen scientists in future ball
-                        lightning reports. The site may be reached via https://tinyurl.com/BLReport.
-                        </br>
-                        </br>
-                        Authors: Richard Sonnenfeld, Karl Stephan, Alexander Keul, Isaac Edelman, Sergio Jimenez
-                        </br>
-                        <a href="http://dx.doi.org/10.1002/essoar.10505247.1" target="_blank">Authorea</a>
+                    <div class="border-column"></div>
+                    <div class="text-column">
+                        <div class="tile-header">Applying modern meteorological tools to the study of Ball Lightning
+                            (Kugelblitz).</div>
+                        <br>
+                        <div class="tile-description">
+                            Abstract: Rakov and Uman pointed out (Lightning: Physics and Effects, 2003) that despite
+                            5000 published reports of ball lightning (BL) and a scientific literature comparable in
+                            volume to the literature on conventional lightning, we still have no idea of what mechanisms
+                            create or power BL. Lightning characterization technology advances can and should be applied
+                            to BL studies. Keul and Diendorfer (2018) have correlated BL reports with European
+                            lightning-detection network data, but no such attempt has been made for US BL reports up to
+                            now. Using 31 BL reports from a now-defunct US website, we have attempted correlations with
+                            National Lightning Detection Network (NLDN) and radar data archived at the National
+                            Climactic Data Center. Of the 31 reports, 5 objects were indoors and 25 were reported to
+                            coincide with thunderstorms. Time information accurate to 30 minutes (1 sigma) and location
+                            information accurate within one to ten km was available from nine of the reports, and for
+                            these we obtained both NLDN and composite radar data covering the time frames indicated by
+                            the reports. For three of the nine reports, we found NLDN located strikes plausibly within
+                            the distance and time frames of the observer reports – thus qualifying as nearby (possibly
+                            causal) lightning. However, for the report for which the location of the ball was known
+                            within meters, the nearest lightning was 2.3 km away. 23 reports only associate BL with a
+                            storm within 25 km. Should it continue to hold in the face of more evidence, the relative
+                            lack of correlation of BL and nearby lightning suggests that the production of BL is
+                            associated more with static or changing electric fields in the vicinity of thunderstorms,
+                            than with the lightning plasma channel itself. While these results by themselves are
+                            limited, we are optimistic that one can learn more about the link between natural and ball
+                            lightning by fusing more precise eyewitness reports with lightning location and other
+                            archival meteorological data. To this end, we have launched a website to guide citizen
+                            scientists in future ball lightning reports. The site may be reached via
+                            https://tinyurl.com/BLReport.
+                            </br></br>
+                            Authors: Richard Sonnenfeld, Karl Stephan, Alexander Keul, Isaac Edelman, Sergio Jimenez
+                            </br>
+                            <a href="http://dx.doi.org/10.1002/essoar.10505247.1" target="_blank">Authorea</a>
+                        </div>
                     </div>
                 </div>
             </div>
