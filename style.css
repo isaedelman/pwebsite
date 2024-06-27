@@ -79,7 +79,7 @@ nav ul {
 
 nav li {
     display: inline;
-    margin-right: 1%;
+    margin-right: 5%;
 }
 
 nav a {
@@ -114,7 +114,7 @@ section {
     font-size: clamp(40px, 8vw, 80px);
 }
 
-.cv-button {
+#welcome .cv-button {
     display: inline-block;
     margin-top: 20px;
     padding: 10px 20px;
@@ -126,7 +126,7 @@ section {
     border: 2px solid #000;
 }
 
-.cv-button:hover {
+#welcome .cv-button:hover {
     color: #808080;
     border: 2px solid #808080;
 }
@@ -137,20 +137,20 @@ section {
     align-items: flex-start;
 }
 
-.text-column {
+#welcome .text-column {
     flex: 1;
     text-align: left;
     padding-right: 20px;
     /* Space between text and image */
 }
 
-.image-column {
+#welcome .image-column {
     flex: 1;
     text-align: center;
     /* Center align the image within its column */
 }
 
-.headshot {
+#welcome .headshot {
     width: 350px;
     height: 450px;
     object-fit: cover;
@@ -170,11 +170,10 @@ section {
     align-items: center;
 }
 
-.project-title-1,
+#projects .project-title-1,
 .project-title-2,
 .project-title-3,
 .project-title-4 {
-    text-decoration: underline;
     font-size: 1.5em;
     margin: 20px 0;
     text-align: left;
@@ -183,7 +182,7 @@ section {
     /* Make sure the title spans the full width */
 }
 
-.tile {
+#projects .tile {
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -191,11 +190,15 @@ section {
     margin: 10px 0;
 }
 
-.tile-content {
+#projects .tile-content {
     display: flex;
     flex-direction: row;
     width: 100%;
     padding: 10px;
+}
+
+#projects .tile-description {
+    text-align: justify;
 }
 
 .text-column {
@@ -209,12 +212,12 @@ section {
     margin: 0 10px;
 }
 
-.image-column {
+#projects .image-column {
     flex: 1;
     text-align: center;
 }
 
-.image-column img {
+#projects .image-column img {
     max-width: 100%;
     height: auto;
     border-radius: 5px;
@@ -225,6 +228,12 @@ section {
     border-top: 2px solid #000;
     width: 100%;
     margin: 20px 0;
+}
+
+#projects .tile-header {
+    font-size: 1.5em;
+    text-align: center;
+    text-transform: uppercase;
 }
 
 /* Publications section */
@@ -244,7 +253,7 @@ section {
     box-sizing: border-box;
 }
 
-.project-title-1,
+#publications .project-title-1,
 .project-title-2,
 .project-title-3,
 .project-title-4,
@@ -255,7 +264,7 @@ section {
     width: 100%;
 }
 
-.tile {
+#publications .tile {
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -265,56 +274,56 @@ section {
     padding-top: 10px;
 }
 
-.tile-header {
+#publications .tile-header {
     font-size: 1.5em;
     text-align: center;
-    text-decoration: underline;
+    text-transform: uppercase;
 }
 
-.tile-content {
+#publications .tile-content {
     display: flex;
     flex-direction: row;
     width: 100%;
     padding: 10px;
 }
 
-.text-column {
+#publications .text-column {
     flex: 1;
     padding: 20px;
     text-align: left;
 }
 
-.border-column {
+#publications .border-column {
     width: 2px;
     background-color: black;
     margin: 0 10px;
 }
 
-.image-column {
+#publications .image-column {
     flex: 1;
     text-align: center;
 }
 
-.image-column img {
+#publications .image-column img {
     max-width: 100%;
     height: auto;
     border-radius: 5px;
 }
 
-hr {
+#publications hr {
     border: 0;
     border-top: 2px solid #000;
     width: 100%;
     margin: 20px 0;
 }
 
-.centered-button-container {
+#publications .centered-button-container {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.orcid-button {
+#publications .orcid-button {
     display: inline-block;
     margin-top: 20px;
     padding: 10px 20px;
@@ -326,9 +335,18 @@ hr {
     border: 2px solid #000;
 }
 
-.orcid-button:hover {
+#publications .orcid-button:hover {
     color: #808080;
     border: 2px solid #808080;
+}
+
+#publications .abstract {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+#publications .authors {
+    text-align: center;
 }
 
 
@@ -399,7 +417,7 @@ hr {
     margin-right: 3%;
 }
 
-.contact-box {
+#contact .contact-box {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
