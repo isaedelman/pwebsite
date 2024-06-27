@@ -2,6 +2,7 @@
 
 /* Main page */
 body {
+    width: auto;
     font-family: Arial, sans-serif;
     color: #000;
     background-color: #f0f0f0;
@@ -461,8 +462,9 @@ section {
     color: #000;
 }
 
+/*
 /* Responsive Styles */
-@media only screen and (max-width: 600px) {
+/* @media only screen and (max-width: 600px) {
     .main {
         height: auto;
         margin: 0 10px;
@@ -492,7 +494,6 @@ section {
         padding-right: 20px;
     }
 
-    /* ---Contact section--- */
     #contact {
         margin: 0 auto;
         height: 750px;
@@ -516,27 +517,28 @@ section {
     }
 }
 
-/* Responsive Design */
 @media (max-width: 1024px) {
     #personal .container {
         width: 80%;
-        /* Adjust container width for smaller screens */
     }
 
     #personal .gallery {
         grid-template-columns: repeat(2, 1fr);
-        /* 2 columns on tablets */
     }
 }
 
 @media (max-width: 768px) {
     #personal .container {
         width: 90%;
-        /* Further adjust container width for smaller screens */
     }
 
     #personal .gallery {
         grid-template-columns: 1fr;
-        /* 1 column on smaller screens */
+    }
+}*/
+
+@media (max-width: 1024px) {
+    .main {
+        width: 1024px;
     }
 }
